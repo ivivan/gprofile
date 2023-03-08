@@ -1,5 +1,4 @@
 import Document, {
-  DocumentContext,
   Html,
   Head,
   Main,
@@ -7,17 +6,35 @@ import Document, {
 } from "next/document";
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx);
-
-    return initialProps;
-  }
-
   render() {
     return (
       <Html>
         <Head>
-          {/* Favicons, Google site verification and other common meta tags across the site. */}
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="description"
+            content="Make your GitHub Profile Great Again."
+          />
+          <meta property="og:site_name" content="ivivan.com" />
+          <meta
+            property="og:description"
+            content="Make your GitHub Profile Great Again."
+          />
+          <meta property="og:title" content="GitHub Profile Generator" />
+          {/* <meta name="twitter:card" content="summary_large_image" /> */}
+          <meta name="twitter:title" content="GitHub Profile Generator" />
+          <meta
+            name="twitter:description"
+            content="Make your GitHub Profile Great Again."
+          />
+          {/* <meta
+            property="og:image"
+            content="https://twitterbio.com/og-image.png"
+          />
+          <meta
+            name="twitter:image"
+            content="https://twitterbio.com/og-image.png"
+          /> */}
         </Head>
         <body>
           <Main />
