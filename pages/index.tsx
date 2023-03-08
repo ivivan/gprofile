@@ -9,9 +9,6 @@ import { SetStateAction, useRef, useState,useEffect } from "react";
 import LoadingDots from "../components/LoadingDots";
 import { Toaster, toast } from "react-hot-toast";
 import Footer from "@/components/Footer";
-import { Button, Grid, Select, Slider, Tabs, Textarea, TextInput } from "@mantine/core";
-
-
 
 const { publicRuntimeConfig } = getConfig();
 
