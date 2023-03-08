@@ -126,9 +126,9 @@ const Home: NextPage = () => {
               <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
             </div>
 
-            <div className="flex items-center space-x-3">
+            {/* <div className="flex items-center space-x-3">
               <p>{prompt}</p>
-            </div>
+            </div> */}
 
 
             {!loading && (
