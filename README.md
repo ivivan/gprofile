@@ -1,40 +1,26 @@
-# Next.js + Tailwind CSS template
+# [chatProfile]()
 
-This project template aims to simplify the setup of Tailwind CSS on your Next.js app.
+Start to learn how to use chatGPT API.
 
-Before using this template, please make sure that your development environment is ready as stated on [Next.js](https://nextjs.org/learn/basics/create-nextjs-app/setup) website.
+This project generates GitHub profile by using chatGPT.
 
-## Create a Next.js App
+[![GitHub Profile Generator](./public/images/screenshot.png)]()
 
-To create a Next.js app with this template, open your terminal, `cd` into the directory you'd like to create the app in, and run the command below:
+## How it works
 
-Note:
-Replace `nextjs-blog` with the project name you'd like to create, eg. `my-nextjs-app`.
+This project uses the [ChatGPT API](https://openai.com/api/) and [Vercel Edge functions](https://vercel.com/features/edge-functions) with streaming. It constructs a prompt based on the form and user input, sends it to the chatGPT API via a Vercel Edge function, then streams the response back to the application.
 
-```
-npx create-next-app nextjs-blog --use-npm --example "https://github.com/earvinpiamonte/nextjs-tailwindcss-template"
-```
 
-## Run development server
+## Running Locally
 
-```
-cd nextjs-blog
-```
+After cloning the repo, go to [OpenAI](https://beta.openai.com/account/api-keys) to make an account and put your API key in a file called `.env`.
 
-```
+Then, run the application in the command line and it will be available at `http://localhost:3000`.
+
+```bash
 npm run dev
 ```
 
-## Deploy with Vercel
+## One-Click Deploy
 
-Deploy this template using Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/earvinpiamonte/nextjs-tailwindcss-template)
-
-## Maintainer
-
-This project is maintained by [Noel Earvin Piamonte](https://www.earvinpiamonte.com).
-
-## Credits
-
-[Deploy button image](https://vercel.com/button) used on this `README.md` is owned by [Vercel](https://vercel.com).
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples)

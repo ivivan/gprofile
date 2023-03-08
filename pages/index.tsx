@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import DropDown from "../components/DropDown";
 import Head from "next/head";
 import Image from "next/image";
-import { SetStateAction, useRef, useState,useEffect } from "react";
+import { SetStateAction, useRef, useState, useEffect } from "react";
 import LoadingDots from "../components/LoadingDots";
 import { Toaster, toast } from "react-hot-toast";
 import Footer from "@/components/Footer";
@@ -126,21 +126,9 @@ const Home: NextPage = () => {
               <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
             </div>
 
-
-
-
-            {/* <div className="flex mt-5 mb-5 items-center space-x-3">
-              <Image src="/three.png" width={30} height={30} alt="1 icon" />
-              <p className="text-left font-medium">Which parts to cover?</p>
-            </div>
-
-            <div className='block mt-5'>
-              <MultiListBox activePersons={activePersons} setActivePersons={(newPerson) => setActivePersons(newPerson)} />
-            </div> */}
-
-            {/* <div className="flex mt-5 mb-5 items-center space-x-3">
+            <div className="flex items-center space-x-3">
               <p>{prompt}</p>
-            </div> */}
+            </div>
 
 
             {!loading && (
